@@ -1,36 +1,35 @@
-# Edit and run this script
-alias uuu='e /usr/local/bin/aoeu.sh'
-alias eee='. /usr/local/bin/aoeu.sh'
 
-# Daily
-alias a='ls'
-alias aa='ls | grep'
-alias o='cd ..'
-alias e='vim'
-alias u='pwd'
-alias i='cd'
-alias m='mkdir'
-alias d='rm -r'
-alias f='find -name'
-alias q='exit'
-alias c='clear'
-alias t='tail -f'
-alias p='ps aux | grep'
-alias h='e /etc/hosts'
-alias x='tar zxvf'
+# Dealing with directories
 
-# Apt
-alias sh='apt-cache search'
-alias in='apt-get install'
-alias un='apt-get remove'
+alias i='cd'           # go in
+alias o='cd ..'        # go out
+alias a='ls'           # list
+alias aa='ls | grep'   # list with filter
+alias u='pwd'          # show current location
+alias m='mkdir'        # make directory
+alias d='rm -r'        # delete directory ( or files )
 
-# Web
-alias nr='service nginx restart'
-alias phpr='service php5-fpm restart'
-alias phpi='e /etc/php5/fpm/php.ini'
-alias md='mount /dev/sda2 /mnt/d'
+# Dealing with files
 
-# SVN
-alias sn='svn st | grep ? | awk '\''{print $2}'\'
-alias sa='svn add `svn st | grep ? | awk '\''{print $2}'\''`'
-alias sr='svn rm --force'
+alias e='vim'          # edit a file
+alias f='find -name'   # find file by name
+alias t='tail -f'      # keep watching at a file
+alias x='tar zxvf'     # extract compress file
+
+# Dealing with packages
+
+alias sh="apt-cache search" # search a package 
+alias in='apt-get install'  # install a package
+alias un='apt-get remove'   # uninstall a package
+
+# Dealing with system
+
+alias q='exit'              # exit shell
+alias c='clear'             # clear monitor
+alias p='ps aux | grep'     # look for process
+alias h='e /etc/hosts'      # edit host config
+
+# Dealing with aoeu.sh
+
+alias uuu="e /usr/local/bin/aoeu.sh" # update the aoeu.sh
+alias eee=". /usr/local/bin/aoeu.sh" # execute the aoeu.sh
