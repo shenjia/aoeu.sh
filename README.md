@@ -38,10 +38,14 @@ alias x='tar zxvf'     // extract compress file
 <h2>Dealing with packages</h2>
 
 <pre>
-alias sh="apt-cache search" // search a package (this command is for Ubuntu version, use the "ports search" for MacOS, "yum search" for Centos, )
+alias sh="apt-cache search" // search a package
 alias in='apt-get install'  // install a package
 alias un='apt-get remove'   // uninstall a package
 </pre>
+
+<p>For MacOS, use "port search | port install | port uninstall" instead.</p>
+
+<p>For Centos, use "yum search | yum install | yum remove" instead.</p>
 
 <h2>Dealing with system</h2>
 
