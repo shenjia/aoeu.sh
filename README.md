@@ -1,6 +1,6 @@
 <h1>aoeu.sh</h1>
 
-<p>This is a shell alias sets, design for Linux / MacOS users, especially for Dvorak keyboard layout users. If you are Qwerty users, there is another solution: <a href="github.com/shenjia/asdf.sh">asdf.sh</a>.</p>
+<p>This is a shell alias sets, design for Linux / MacOS users, especially for Dvorak keyboard layout users. If you are Qwerty users, there is another solution: <a href="https://github.com/shenjia/asdf.sh">asdf.sh</a>.</p>
 
 <p>We deal with shell everyday, type same commands around and around. </p>
 
@@ -67,7 +67,7 @@ alias eee=". /usr/local/bin/aoeu.sh" // execute the aoeu.sh
 
 <p>Create your own alias now! Before you set a new alias, type it on shell and make sure it's <strong>NOT</strong> used. </p>
 
-<p>For example, I'm a web engineer, so I create those for develop:
+<p>For example, I'm a web engineer, so I create those alias to do chores:
 
 <pre>
 alias nr='service nginx restart'
@@ -76,8 +76,6 @@ alias phpi='e /etc/php5/fpm/php.ini'
 alias sn='svn st | grep ? | awk '\''{print $2}'\'             
 alias sa='svn add `svn st | grep ? | awk '\''{print $2}'\''`' 
 alias sr='svn rm --force'                                     
-alias si='svn ci'                                             
-alias so='svn co'                   
 .....                          
 </pre>
 
