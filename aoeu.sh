@@ -6,8 +6,7 @@ alias a='ls'           # list
 alias aa='ls | grep'   # list with filter
 alias u='pwd'          # show current location
 alias m='mkdir'        # make directory
-alias d='rm'           # delete directory ( or files )
-alias df='rm -rf'      # delete directory ( or files ) forcely
+alias d='rm -rf'       # delete directory ( or files )
 
 # Dealing with files
 
