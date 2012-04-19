@@ -15,12 +15,24 @@ alias e='vim'          # edit a file
 alias f='find -name'   # find file by name
 alias t='tail -f'      # keep watching at a file
 alias x='tar zxvf'     # extract compress file
+alias g='wget'         # get file from internet
 
-# Dealing with packages
+# Dealing with packages 
 
+# for APT in Ubuntu / Debian / ...
 alias sh="apt-cache search" # search a package 
 alias in='apt-get install'  # install a package
 alias un='apt-get remove'   # uninstall a package
+
+# for YUM in Redhat / Centos / Fedora...
+#alias sh="yum search"   	# search a package 
+#alias in='yum install'  	# install a package
+#alias un='yum remove'   	# uninstall a package
+
+# for PORTS in MacOS
+#alias sh="port search" 		# search a package 
+#alias in='port install'  	# install a package
+#alias un='port uninstall'   # uninstall a package
 
 # Dealing with system
 
@@ -28,6 +40,7 @@ alias q='exit'              # exit shell
 alias c='clear'             # clear monitor
 alias p='ps aux | grep'     # look for process
 alias h='e /etc/hosts'      # edit host config
+alias k='killall'			# kill process
 
 # Dealing with aoeu.sh
 
