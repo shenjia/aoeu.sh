@@ -20,7 +20,7 @@ alias g='wget'         # get file from internet
 # Dealing with packages 
 
 # for APT in Ubuntu / Debian / ...
-alias sh='apt-cache search' # search a package 
+alias se='apt-cache search' # search a package 
 alias in='apt-get install'  # install a package
 alias un='apt-get remove'   # uninstall a package
 
@@ -30,7 +30,7 @@ alias un='apt-get remove'   # uninstall a package
 #alias un='yum remove'   	# uninstall a package
 
 # for PORTS in MacOS
-#alias sh='port search'     # search a package 
+#alias se='port search'     # search a package 
 #alias in='port install'    # install a package
 #alias un='port uninstall'  # uninstall a package
 
