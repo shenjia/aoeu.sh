@@ -14,6 +14,7 @@ alias e='vim'          # edit a file
 alias f='find -name'   # find file by name
 alias t='tail -f'      # keep watching at a file
 alias x='tar zxvf'     # extract compress file
+alias xx='chmod +x'    # add execute permission
 alias g='wget'         # get file from internet
 
 # Dealing with packages 
