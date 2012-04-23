@@ -25,7 +25,7 @@ alias in='apt-get install'  # install a package
 alias un='apt-get remove'   # uninstall a package
 
 # for YUM in Redhat / Centos / Fedora...
-#alias sh='yum search'   	# search a package 
+#alias se='yum search'   	# search a package 
 #alias in='yum install'  	# install a package
 #alias un='yum remove'   	# uninstall a package
 
@@ -41,6 +41,7 @@ alias c='clear'             # clear monitor
 alias p='ps aux | grep'     # look for process
 alias h='e /etc/hosts'      # edit host config
 alias k='killall'           # kill process
+alias nt='netstat -tulnp'   # list process which listening port
 
 # Dealing with aoeu.sh
 
