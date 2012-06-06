@@ -1,12 +1,12 @@
 # Dealing with directories
 
-alias i='cd'           # go in
-alias o='cd ..'        # go out
-alias a='ls'           # list
-alias aa='ls | grep'   # list with filter
-alias u='pwd'          # show current location
-alias m='mkdir'        # make directory
-alias d='rm -rf'       # delete directory ( or files )
+alias i='cd'             # go in
+alias o='cd ..'          # go out
+alias a='ls'             # list
+alias aa='ls -l'         # list with details
+alias u='pwd'            # show current location
+alias m='mkdir'          # make directory
+alias d='rm -rf'         # delete directory ( or files )
 
 # Dealing with files
 
@@ -30,19 +30,15 @@ alias un='apt-get remove'   # uninstall a package
 #alias in='yum install'  	# install a package
 #alias un='yum remove'   	# uninstall a package
 
-# for PORTS in MacOS
-#alias se='port search'     # search a package 
-#alias in='port install'    # install a package
-#alias un='port uninstall'  # uninstall a package
-
 # Dealing with system
 
-alias q='exit'              # exit shell
-alias c='clear'             # clear monitor
-alias p='ps aux | grep'     # look for process
-alias h='e /etc/hosts'      # edit host config
-alias k='killall'           # kill process
-alias nt='netstat -tulnp'   # list process which listening port
+alias q='exit'                  # exit shell
+alias c='clear'                 # clear monitor
+alias p='ps aux | grep'         # look for process
+alias h='e /etc/hosts'          # edit host config
+alias k='killall'               # kill process
+alias nt='netstat -tulnp'       # list process which listening port
+alias sudo='A=`alias` sudo env' # pass aliases to sudo
 
 # Dealing with aoeu.sh
 
