@@ -20,23 +20,26 @@ alias x='tar zxvf'     # extract compress file
 alias xx='chmod +x'    # add execute permission
 alias g='wget'         # get file from internet
 
-# Dealing with packages 
+# Dealing with ports 
 
-# for PORTS in MacOS
-alias se='port search'     # search a package 
-alias is='port -v install' # install a package
-alias un='port uninstall'  # uninstall a package
+alias se='sudo port search'   # search a port 
+alias is='sudo port -v install'      # install a port
+alias un='sudo port uninstall'       # uninstall a port
+function re()                   # reload a port
+{
+	sudo port unload $1
+	sudo port load $1
+}
 
 # Dealing with system
 
-alias q='exit'                  # exit shell
-alias c='clear'                 # clear monitor
-alias p='ps aux | grep'         # look for process
-alias h='e /etc/hosts'          # edit host config
-alias k='killall'               # kill process
-alias nt='netstat -tulnp'       # list process which listening port
-alias su='su -'                 # switch to root
-alias sudo='A=`alias` sudo env' # pass aliases to sudo
+alias q='exit'                           # exit shell
+alias c='clear'                          # clear monitor
+alias p='ps aux | grep'                  # look for process
+alias h='e /etc/hosts'                   # edit host config
+alias k='sudo killall'                   # kill process
+alias pt='sudo lsof -i -P -sTCP:LISTEN'  # listening port
+alias su='su -'                          # switch to root user
 
 # Dealing with aoeu.sh
 
