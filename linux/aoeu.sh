@@ -2,8 +2,10 @@
 
 alias i='cd'             # go in
 alias o='cd ..'          # go out
+alias oo='cd /'          # go root
 alias a='ls'             # list
 alias aa='ls -l'         # list with details
+alias aaa='du -sh'       # list disk usage
 alias u='pwd'            # show current location
 alias m='mkdir'          # make directory
 alias d='rm -rf'         # delete directory ( or files )
@@ -27,7 +29,7 @@ alias un='apt-get remove'   # uninstall a package
 
 # for YUM in Redhat / Centos / Fedora...
 #alias se='yum search'   	# search a package 
-#alias in='yum install'  	# install a package
+#alias is='yum install'  	# install a package
 #alias un='yum remove'   	# uninstall a package
 
 # Dealing with system

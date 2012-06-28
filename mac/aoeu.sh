@@ -5,6 +5,7 @@ alias o='cd ..'          # go out
 alias oo='cd /'          # go root
 alias a='ls -G'          # list
 alias aa='ls -G -l'      # list with details
+alias aaa='du -sh'       # list disk usage
 alias u='pwd'            # show current location
 alias m='mkdir'          # make directory
 alias d='rm -rf'         # delete directory ( or files )
