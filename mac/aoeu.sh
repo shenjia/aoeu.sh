@@ -39,6 +39,7 @@ alias c='clear'                          # clear monitor
 alias p='ps aux | grep'                  # look for process
 alias h='e /etc/hosts'                   # edit host config
 alias k='sudo killall'                   # kill process
+alias ip="ifconfig | sed -n '/inet /p'"  # list ips
 alias pt='sudo lsof -i -P -sTCP:LISTEN'  # listening port
 alias su='su -'                          # switch to root user
 
