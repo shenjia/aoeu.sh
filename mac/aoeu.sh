@@ -37,7 +37,7 @@ function re()                   # reload a port
 alias q='exit'                           # exit shell
 alias c='clear'                          # clear monitor
 alias p='ps aux | grep'                  # look for process
-alias h='e /etc/hosts'                   # edit host config
+alias h='sudo vim /etc/hosts'            # edit host config
 alias k='sudo killall'                   # kill process
 alias ip="ifconfig | sed -n '/inet /p'"  # list ips
 alias pt='sudo lsof -i -P -sTCP:LISTEN'  # listening port
