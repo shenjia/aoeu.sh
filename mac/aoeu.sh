@@ -13,12 +13,13 @@ alias d='rm -rf'         # delete directory ( or files )
 # Dealing with files
 
 alias e='vim'          # edit a file
-alias pe='pledit'      # edit a plist
+alias ee='sudo vim'    # edit a file wih sudo
 alias f='find . -name' # find file by name
 alias t='tail -f'      # keep watching at a file
 alias z='tar zcvf'     # compress file
 alias x='tar zxvf'     # extract compress file
 alias xx='chmod +x'    # add execute permission
+alias ww='chmod a+w'   # add write permission
 alias g='wget'         # get file from internet
 
 # Dealing with ports 
