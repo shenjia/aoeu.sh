@@ -8,7 +8,6 @@ alias aa='ls -G -l -h'   # list with details
 alias aaa='du -h -d 1'   # list disk usage
 alias u='pwd'            # show current location
 alias m='mkdir'          # make directory
-alias d='rm -rf'         # delete directory ( or files )
 
 # Dealing with files
 
@@ -46,6 +45,5 @@ alias su='su -'                          # switch to root user
 
 # Dealing with aoeu.sh
 
-alias uuu="e /Users/zhangshenjia/aoeu.sh/mac/aoeu.sh" # update the aoeu.sh
-alias eee=". /Users/zhangshenjia/aoeu.sh/mac/aoeu.sh" # execute the aoeu.sh
-
+alias uuu="e /Users/zhangshenjia/github/aoeu.sh/mac/aoeu.sh" # update the aoeu.sh
+alias eee=". /Users/zhangshenjia/github/aoeu.sh/mac/aoeu.sh" # execute the aoeu.sh
