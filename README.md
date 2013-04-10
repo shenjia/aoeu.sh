@@ -23,7 +23,6 @@ alias a='ls'           // list
 alias aa='ls | grep'   // list with filter
 alias u='pwd'          // show current location
 alias m='mkdir'        // make directory
-alias d='rm -r'        // delete directory ( or files )
 </pre>
 
 <h2>Dealing with files</h2>
