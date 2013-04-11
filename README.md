@@ -1,6 +1,6 @@
 <h1>aoeu.sh</h1>
 
-<p>This is a shell alias sets, design for Linux / MacOS users, especially for Dvorak keyboard layout users. If you are Qwerty users, there is another solution: <a href="https://github.com/shenjia/asdf.sh">asdf.sh</a>.</p>
+<p>This is a shell alias sets, design for Linux / MacOS users, especially for Dvorak keyboard layout users.</p>
 
 <p>We deal with shell everyday, type same commands around and around. </p>
 
