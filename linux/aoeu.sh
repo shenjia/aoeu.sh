@@ -21,17 +21,17 @@ alias xx='chmod +x'    # add execute permission
 alias ww='chmod a+w'   # add write permission
 alias g='wget'         # get file from internet
 
-# Dealing with packages 
+# Dealing with packages ( for YUM in Redhat / Centos / Fedora... )
 
-# for APT in Ubuntu / Debian / ...
-alias se='apt-cache search' # search a package 
-alias in='apt-get install'  # install a package
-alias un='apt-get remove'   # uninstall a package
+alias se='sudo yum search'   	# search a package 
+alias is='sudo yum install'  	# install a package
+alias un='sudo yum remove'   	# uninstall a package
 
-# for YUM in Redhat / Centos / Fedora...
-#alias se='yum search'   	# search a package 
-#alias is='yum install'  	# install a package
-#alias un='yum remove'   	# uninstall a package
+# Dealing with packages ( for APT in Ubuntu / Debian / ... )
+
+#alias se='sudo apt-cache search' # search a package 
+#alias in='sudo apt-get install'  # install a package
+#alias un='sudo apt-get remove'   # uninstall a package
 
 # Dealing with system
 
@@ -44,7 +44,12 @@ alias ip="ifconfig | sed -n '/inet /p'"  # list ips
 alias pt='sudo lsof -i -P -sTCP:LISTEN'  # listening port
 alias su='su -'                          # switch to root user
 
+# Dealing with services
+
+alias nr='sudo /etc/init.d/nginx reload'
+alias pr='sudo /etc/init.d/php-fpm restart'
+
 # Dealing with aoeu.sh
 
-alias uuu="e /usr/local/bin/aoeu.sh" # update the aoeu.sh
-alias eee=". /usr/local/bin/aoeu.sh" # execute the aoeu.sh
+alias uuu="e ~/aoeu.sh" # update the aoeu.sh
+alias eee=". ~/aoeu.sh" # execute the aoeu.sh
