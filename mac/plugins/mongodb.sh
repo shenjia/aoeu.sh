@@ -1,0 +1,5 @@
+alias mo='mongo'
+alias ml='t /opt/local/var/log/mongodb/mongodb.log'
+alias ms='mongostat'
+alias mor='mongorestore'
+alias mod='mongodump'
