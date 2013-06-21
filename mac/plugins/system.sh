@@ -57,14 +57,21 @@ function au()
 {
     if [ -z $1 ]
     then
-        echo "Usage: au <host> [port]"
+        echo "Usage: au [user@]<host> [port]"
         echo "E.g.: au 8.8.8.8"
     fi
+	rsa_key=`cat ~/.ssh/id_rsa.pub`
+	if [[ $1 =~ @ ]]
+	then
+		ssh_server=$1
+	else
+		ssh_server=root@$1
+	fi
     if [ ! $2 ]
     then
-        ssh root@$1 "echo `cat ~/.ssh/id_rsa.pub` >> /root/.ssh/authorized_keys"
+        ssh -t $ssh_server "mkdir ~/.ssh;echo $rsa_key >> ~/.ssh/authorized_keys"
     else
-        ssh -p $2 root@$1 "echo `cat ~/.ssh/id_rsa.pub` >> /root/.ssh/authorized_keys"
+        ssh -t -p $2 $ssh_server "mkdir ~/.ssh;echo $rsa_key >> ~/.ssh/authorized_keys"
     fi
 }
 
