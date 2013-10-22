@@ -5,9 +5,9 @@ function rc()
 }
 function rlist()
 {
-    redis-cli -h $redis_path keys $1
+    redis-cli -h $redis_path keys "$1"
 }
 function rclear()
 {
-    redis-cli -h $redis_path keys $1 | xargs redis-cli -h $redis_path del
+    redis-cli -h $redis_path keys "$1" | xargs redis-cli -h $redis_path del
 }

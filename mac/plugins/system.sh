@@ -5,7 +5,7 @@ alias o='cd ..'          # go out
 alias oo='cd /'          # go root
 alias a='ls -G'          # list
 alias aa='ls -G -l -h'   # list with details
-alias aaa='du -h -d 1'   # list disk usage
+alias aaa='sudo du -h -d 1'   # list disk usage
 alias u='pwd'            # show current location
 alias m='mkdir'          # make directory
 
@@ -44,8 +44,8 @@ function ca()
 {
     if [ -z $1 ]
     then
-        echo "Usage: ca <alias> <path>"
-        echo "E.g.: ca lib /www/frameworks/lib"
+        echo "Usage: ca <alias>"
+        echo "E.g.: cd /www/frameworks/lib; ca lib"
     fi
     PWD=`pwd`
     echo "alias $1='cd $PWD'" >> $aoeu_plugins/cd.sh

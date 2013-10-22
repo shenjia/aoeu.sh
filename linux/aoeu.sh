@@ -5,7 +5,7 @@ alias o='cd ..'                 # go out
 alias oo='cd /'                 # go root
 alias a='ls --color'            # list
 alias aa='ls -l -h'             # list with details
-alias aaa='du -h --maxdepth 1'  # list disk usage
+alias aaa='du -h --maxdepth=1'  # list disk usage
 alias u='pwd'                   # show current location
 alias m='mkdir'                 # make directory
 
