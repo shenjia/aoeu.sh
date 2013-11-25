@@ -1,4 +1,4 @@
-alias nr='re nginx'
+alias nr='sudo nginx -s reload'
 alias pr='re php54-fpm'
-alias php='php54'
 alias cpd='/Users/zhangshenjia/Documents/software/web/php/phpcpd.phar'
+alias yc='./protected/yiic'
