@@ -1,25 +1,27 @@
 # Dealing with directories
 
-alias i='cd'             # go in
-alias o='cd ..'          # go out
-alias oo='cd /'          # go root
-alias a='ls -G'          # list
-alias aa='ls -G -l -h'   # list with details
-alias aaa='sudo du -h -d 1'   # list disk usage
-alias u='pwd'            # show current location
-alias m='mkdir'          # make directory
+alias i='cd'                       # go in
+alias o='cd ..'                    # go out
+alias oo='cd /'                    # go root
+alias a='ls -G'                    # list
+alias aa='ls -G -l -h -a'          # list with details
+alias aaa='sudo du -h -d 1'        # list disk usage
+alias u='pwd'                      # show current location
+alias m='mkdir'                    # make directory
+alias rm='rm -i'                   # don't remove so easily
+alias et='sudo rm -rf ~/.Trash/*'  # empty the trashes
 
 # Dealing with files
 
-alias e='vim'          # edit a file
-alias ee='sudo vim'    # edit a file wih sudo
-alias f='find . -name' # find file by name
-alias t='tail -f'      # keep watching at a file
-alias z='tar zcvf'     # compress file
-alias x='tar zxvf'     # extract compress file
-alias xx='chmod +x'    # add execute permission
-alias ww='chmod a+w'   # add write permission
-alias g='wget'         # get file from internet
+alias e='vim'              # edit a file by VIM
+alias ee='sudo vim'        # edit a file by VIM with sudo
+alias f='find . -name'     # find file by name
+alias t='tail -f'          # keep watching at a file
+alias z='tar zcvf'         # compress file
+alias x='tar zxvf'         # extract compress file
+alias xx='chmod +x'        # add execute permission
+alias w='wget'             # get file from internet
+alias ww='chmod -R a+w'    # add write permission
 
 # Dealing with system
 
@@ -32,6 +34,7 @@ alias ip="ifconfig | sed -n '/inet /p'"  # list ips
 alias pt='sudo lsof -i -P -sTCP:LISTEN'  # listening port
 alias su='su -'                          # switch to root user
 alias wh="type -a"                       # echo type of command
+alias g="grep --color"                # grep with color
 
 # Kill all
 function ka()
@@ -78,5 +81,11 @@ function au()
 # Make backup
 function bak()
 {
-    cp $1{,.bak}
+	cp $1 $1.bak
+}
+
+# Move to trashes
+function r()
+{
+	mv $1 ~/.Trash
 }
