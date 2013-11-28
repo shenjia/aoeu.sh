@@ -87,5 +87,6 @@ function bak()
 # Move to trashes
 function r()
 {
-	mv $1 ~/.Trash
+	TIME=`date "+%Y-%m-%d.%H.%M.%S"`
+	mv $1 ~/.Trash/$TIME\ $1
 }
