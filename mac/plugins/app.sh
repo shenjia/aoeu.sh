@@ -9,9 +9,7 @@ function zapp()
 	# init new repo
 	cd $WORKSPACE/$1
 	rm -rf .git
-	git init
-	git add -A
-	git commit -a -m init
+	ginit
 	chmod a+w $WORKSPACE/$1/code/frontend/runtime
 	chmod a+w $WORKSPACE/$1/code/backend/runtime
 	chmod a+w $WORKSPACE/$1/code/console/runtime
@@ -35,9 +33,7 @@ function newapp()
 
 	# init new repo
 	cd $WORKSPACE/$1
-	git init
-	echo ".DS_Store" > .gitignore
-	git commit -a -m init
+	ginit
 
 	# create host
 	echo "127.0.0.1   $1" > /tmp/hosts
