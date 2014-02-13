@@ -1,8 +1,7 @@
 # Dealing with directories
 
-alias i='cd'                       # go in
-alias o='cd ..'                    # go out
-alias oo='cd /'                    # go root
+alias ii='cd'                      # go in
+alias oo='cd ..'                   # go out
 alias a='ls -G'                    # list
 alias aa='ls -G -l -h -a'          # list with details
 alias aaa='sudo du -h -d 1'        # list disk usage
@@ -10,6 +9,16 @@ alias u='pwd'                      # show current location
 alias m='mkdir'                    # make directory
 alias rm='rm -i'                   # don't remove so easily
 alias et='sudo rm -rf ~/.Trash/*'  # empty the trashes
+
+# go in and ls
+function i() {
+	cd $@ && a
+}
+
+# go out and ls
+function o() {
+	cd .. && a
+}
 
 # Dealing with files
 
@@ -22,6 +31,7 @@ alias x='tar zxvf'         # extract compress file
 alias xx='chmod +x'        # add execute permission
 alias w='wget'             # get file from internet
 alias ww='chmod -R a+w'    # add write permission
+alias di='colordiff'       # diff two files
 
 # Dealing with system
 

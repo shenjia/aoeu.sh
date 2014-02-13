@@ -1,13 +1,24 @@
 # Dealing with directories
 
-alias i='cd'                    # go in
-alias o='cd ..'                 # go out
-alias oo='cd /'                 # go root
-alias a='ls --color'            # list
-alias aa='ls -l -h'             # list with details
-alias aaa='du -h --maxdepth=1'  # list disk usage
-alias u='pwd'                   # show current location
-alias m='mkdir'                 # make directory
+alias ii='cd'                      # go in
+alias oo='cd ..'                   # go out
+alias a='ls -G'                    # list
+alias aa='ls -G -l -h -a'          # list with details
+alias aaa='sudo du -h -d 1'        # list disk usage
+alias u='pwd'                      # show current location
+alias m='mkdir'                    # make directory
+alias rm='rm -i'                   # don't remove so easily
+alias et='sudo rm -rf ~/.Trash/*'  # empty the trashes
+
+# go in and ls
+function i() {
+	cd $@ && a
+}
+
+# go out and ls
+function o() {
+	cd .. && a
+}
 
 # Dealing with files
 
@@ -43,13 +54,3 @@ alias k='killall'                        # kill process
 alias ip="ifconfig | sed -n '/inet /p'"  # list ips
 alias pt='sudo lsof -i -P -sTCP:LISTEN'  # listening port
 alias su='su -'                          # switch to root user
-
-# Dealing with services
-
-alias nr='sudo /etc/init.d/nginx reload'
-alias pr='sudo /etc/init.d/php-fpm restart'
-
-# Dealing with aoeu.sh
-
-alias uuu="e ~/aoeu.sh" # update the aoeu.sh
-alias eee=". ~/aoeu.sh" # execute the aoeu.sh
