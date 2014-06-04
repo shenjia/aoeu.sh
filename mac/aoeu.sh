@@ -1,8 +1,7 @@
 #/bin/sh
-#. ~/aoeu.sh/aoeu.sh
 aoeu_plugins=/opt/local/aoeu.sh/plugins
 
-for filename in `ls $aoeu_plugins`
+for filename in `ls $aoeu_plugins/*.sh`
 	do
-		. $aoeu_plugins/$filename
+		. $filename
 	done
