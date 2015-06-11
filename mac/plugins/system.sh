@@ -44,12 +44,12 @@ alias pt='sudo lsof -i -P -sTCP:LISTEN'  # listening port
 alias su='su -'                          # switch to root user
 alias wh="type -a"                       # echo type of command
 alias g="grep --color"                   # grep with color
-function gh()
+function ghr()
 {
 	grep $1 . -r --exclude=*.svn-base --exclude=*.tmp --exclude=*.swp | grep -v '.svn'
 }
 
-function ghl()
+function ghrl()
 {
 	grep $1 . -rl --exclude=*.svn-base --exclude=*.tmp --exclude=*.swp | grep -v '.svn'
 }

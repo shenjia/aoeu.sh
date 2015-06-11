@@ -1,3 +1,5 @@
+alias guu='git pull origin develop'
+alias gpp='git push origin develop'
 alias ge='vim /Users/zhangshenjia/Cloud/works/github/aoeu.sh/mac/plugins/git.sh'
 alias gs='git status'
 alias gm='git merge --no-ff'
@@ -103,7 +105,6 @@ function ginfo() {
     fi
     popd >/dev/null
 }
-source ~/.git-prompt.sh
 COLOR_ID="\[\e[1;30m\]"
 COLOR_PWD='\[\e[m\]'
 COLOR_GIT='\[\e[1;34m\]'
