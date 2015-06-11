@@ -1,0 +1,1 @@
+alias py='python'
