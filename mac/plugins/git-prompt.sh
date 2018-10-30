@@ -452,3 +452,10 @@ __git_ps1 ()
 		printf -- "$printf_format" "$gitstring"
 	fi
 }
+COLOR_ID="\[\e[1;30m\]"
+COLOR_PWD='\[\e[m\]'
+COLOR_GIT='\[\e[1;34m\]'
+COLOR_SPLITTER='\[\e[1;34m\]'
+COLOR_PROMPT='\[\e[m\]'
+SPLITTER="$ "
+PS1="${COLOR_ID}\u@mac${COLOR_PWD} \W${COLOR_GIT}\$(__git_ps1) ${COLOR_SPLITTER}${SPLITTER}${COLOR_PROMPT}"

@@ -1,5 +1,14 @@
-alias guu='git pull origin develop'
-alias gpp='git push origin develop'
+alias gk='touch .gitkeep'
+function branch() {
+	git branch|grep '*'|awk '{print $2}'
+}
+function guu() {
+	git pull origin `branch`
+}
+function gpp() {
+	git push origin `branch`
+}
+alias gup='guu;gpp'
 alias ge='vim /Users/zhangshenjia/Cloud/works/github/aoeu.sh/mac/plugins/git.sh'
 alias gs='git status'
 alias gm='git merge --no-ff'
@@ -25,7 +34,7 @@ alias gdh='git diff HEAD'
 alias gl='git log --pretty=format:"%h: %s (%an, %ar)" --graph'
 alias grl='git reflog'
 alias gr='git reset'
-alias grh='git reset --hard HEAD'
+alias grh='git reset HEAD'
 alias grm='git reset --hard master'
 alias grom='git reset --hard origin/master'
 alias grb='git rebase'
@@ -105,10 +114,3 @@ function ginfo() {
     fi
     popd >/dev/null
 }
-COLOR_ID="\[\e[1;30m\]"
-COLOR_PWD='\[\e[m\]'
-COLOR_GIT='\[\e[1;34m\]'
-COLOR_SPLITTER='\[\e[1;34m\]'
-COLOR_PROMPT='\[\e[m\]'
-SPLITTER="$ "
-PS1="${COLOR_ID}\u@mac${COLOR_PWD} \W${COLOR_GIT}\$(__git_ps1) ${COLOR_SPLITTER}${SPLITTER}${COLOR_PROMPT}"

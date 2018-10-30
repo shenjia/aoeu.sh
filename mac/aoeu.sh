@@ -1,7 +1,7 @@
 #/bin/sh
-aoeu_plugins=/opt/local/aoeu.sh/plugins
+PWD=$(cd "$(dirname "${BASH_SOURCE-$0}")"; pwd)
 
-for filename in `ls $aoeu_plugins/*.sh`
+for filename in `ls $PWD/plugins/*.sh`
 	do
 		. $filename
 	done
