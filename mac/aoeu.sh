@@ -1,7 +1,7 @@
 #/bin/sh
-PWD=$(cd "$(dirname "${BASH_SOURCE-$0}")"; pwd)
+DIR=$(cd "$(dirname "${BASH_SOURCE-$0}")"; pwd)
 
-for filename in `ls $PWD/plugins/*.sh`
+for filename in `ls $DIR/plugins/*.sh`
 	do
 		. $filename
 	done
