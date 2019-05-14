@@ -1,3 +1,8 @@
+
+alias lf='sudo lsof -i -P -sTCP:LISTEN'  # listening port by lsof
+alias pt='netstat -an' # listening port list
+alias ptg='netstat -an | grep --color=auto' # grep listening port
+
 # Get IP
 function ip()
 {

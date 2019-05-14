@@ -40,18 +40,19 @@ alias c='clear'                          # clear monitor
 alias p='ps aux | grep'                  # look for process
 alias h='sudo vim /etc/hosts'            # edit host config
 alias k='sudo killall'                   # kill process
-alias pt='sudo lsof -i -P -sTCP:LISTEN'  # listening port
 alias su='su -'                          # switch to root user
 alias wh="type -a"                       # echo type of command
-alias g="grep --color"                   # grep with color
-function ghr()
-{
-	grep $1 . -r --exclude=*.svn-base --exclude=*.tmp --exclude=*.swp | grep -v '.svn'
-}
+alias grep="grep --color=auto"           # colorful grep
 
-function ghrl()
+# Find something in PWD
+function g()
 {
-	grep $1 . -rl --exclude=*.svn-base --exclude=*.tmp --exclude=*.swp | grep -v '.svn'
+	grep $1 . -r --exclude=*.svn-base --exclude=*.tmp --exclude=*.swp --color=auto
+}
+# Get file list contains something in PWD
+function gf()
+{
+	grep $1 . -rl --exclude=*.svn-base --exclude=*.tmp --exclude=*.swp --color=auto
 }
 
 # Kill all
@@ -73,11 +74,16 @@ function ca()
     alias $1="i $PWD"
 }
 
-# Make backup
+# Backup & Restore
 function bak()
 {
 	cp $1 $1.bak
 }
+function re()
+{
+    mv $1.bak $1
+}
+
 
 # Move to trashes
 function r()

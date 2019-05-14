@@ -17,3 +17,11 @@ function reload() {
     launchctl load -w $2
     echo "[ $1 ] restarted."
 }
+function stop() {
+    launchctl unload -w $1
+    echo "[ $1 ] stoped."
+}
+function start() {
+    launchctl load -w $1
+    echo "[ $1 ] started."
+}
