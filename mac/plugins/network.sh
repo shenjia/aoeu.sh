@@ -1,5 +1,6 @@
 
 alias lf='sudo lsof -i -P -sTCP:LISTEN'  # listening port by lsof
+alias lfg='sudo lsof -i -P -sTCP:LISTEN | grep --color=auto'  # listening port by lsof
 alias pt='netstat -an' # listening port list
 alias ptg='netstat -an | grep --color=auto' # grep listening port
 

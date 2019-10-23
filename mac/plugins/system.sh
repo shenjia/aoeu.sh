@@ -43,6 +43,7 @@ alias k='sudo killall'                   # kill process
 alias su='su -'                          # switch to root user
 alias wh="type -a"                       # echo type of command
 alias grep="grep --color=auto"           # colorful grep
+alias ?='tldr'                           # get command help
 
 # Find something in PWD
 function g()
