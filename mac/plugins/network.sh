@@ -32,8 +32,8 @@ function au()
     fi
     if [ ! $2 ]
     then
-        ssh -t $ssh_server "mkdir ~/.ssh;echo $rsa_key >> ~/.ssh/authorized_keys"
+        ssh -t $ssh_server "echo $rsa_key >> ~/.ssh/authorized_keys"
     else
-        ssh -t -p $2 $ssh_server "mkdir ~/.ssh;echo $rsa_key >> ~/.ssh/authorized_keys"
+        ssh -t -p $2 $ssh_server "echo $rsa_key >> ~/.ssh/authorized_keys"
     fi
 }

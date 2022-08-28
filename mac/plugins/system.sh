@@ -3,7 +3,7 @@
 alias ii='cd'                      # go in
 alias oo='cd ..'                   # go out
 alias a='ls -G'                    # list
-alias aa='ls -G -l -h -a'          # list with details
+alias l='ls -G -l -h -a'          # list with details
 alias aaa='sudo du -h -d 1'        # list disk usage
 alias u='pwd'                      # show current location
 alias m='mkdir'                    # make directory
@@ -43,7 +43,6 @@ alias k='sudo killall'                   # kill process
 alias su='su -'                          # switch to root user
 alias wh="type -a"                       # echo type of command
 alias grep="grep --color=auto"           # colorful grep
-alias ?='tldr'                           # get command help
 
 # Find something in PWD
 function g()
